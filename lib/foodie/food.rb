@@ -4,8 +4,8 @@ module Foodie
       def self.portray(food)
         if food.downcase == "broccoli"
           "Gross!"
-        elsif food.downcase == "banana"
-          "Yummy!"  
+        # elsif food.downcase == "banana"
+        #   "Yummy!"  
         else
           "Delicious!"
         end
