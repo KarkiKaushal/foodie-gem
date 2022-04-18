@@ -1,0 +1,6 @@
+##### Ingredients #####
+Ingredients for delicious <%= group%> of <%= name %> go here.
+
+
+##### Instructions #####
+Tips on how to make delicious <%= group%> of <%= name %> go here.

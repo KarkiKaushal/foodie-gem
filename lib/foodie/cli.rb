@@ -1,5 +1,7 @@
 require 'thor'
 require 'foodie'
+require 'foodie/generators/recipe'
+
 module Foodie
   class CLI < Thor
     desc "portray ITEM", "Determines if a piece of food is gross or delicious"
@@ -12,5 +14,10 @@ module Foodie
       puts Foodie::Food.pluralize(options[:word])
     end
     
+    desc "recipe", "Generates a recipe scaffold"
+    def recipe(group, name)
+      Foodie::Generators::Recipe.start([group, name])
+    end
   end
+ 
 end
